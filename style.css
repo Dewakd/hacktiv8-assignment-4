@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccd2d5;
+    font-family: "Roboto", sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+nav{
+    width: 100%;
+    background: white;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar li{
+    height: 100%;
+
+}
+
+.navbar a{
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.navbar a:hover{
+    background-color: black;
+    color: white;
+}
+
+.profile__section{
+    margin-top: 2rem;
+    padding: 0 20px;
+}
+
+.profile__container{
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.profile_left-side{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-right: 4rem;
+}
+
+.profile_left-side img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.profile_left-side .profile-data{
+    margin-left: 20px;
+}
+
+.profile_left-side .profile-data .profile-name-role{
+    margin-bottom: 15px;
+}
+
+.profile_left-side .profile-data .profile-name-role p{
+    color: #989898;
+}
+
+
+.button_kontak-resume button:nth-child(1){
+    background: blue;
+    color: white;
+    margin-right:10px ;
+}
+
+.button_kontak-resume button{
+    cursor: pointer;
+    background: none;
+    padding: 10px 25px;
+    border: 1px solid black;
+    
+}
+
+.profile_right-side{
+    border-left: 1px solid rgb(0, 0, 0, 0.2);
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.profile_right-side .title-data p{
+    font-weight: 700;
+}
+
+.profile_right-side .title-value p{
+    color: #989898;
+}
+
+.profile_right-side .title-data p,
+.profile_right-side .title-value p{
+    margin: 15px;
+}
+
+.form__section{
+    margin-top: 2rem;
+    padding: 0 20px;
+    display: none;
+}
+
+
+.form__container{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px
+}
+
+form label{
+    display: block;
+    margin: 20px 0 5px 0;
+    font-weight: 600;
+}
+
+form input{
+    width: 100%;
+    padding: 7px;
+}
+
+form input.submit{
+    background: #1f761a;
+    border: 0;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+form input.submit:hover{
+    background: white;
+    border: 1px solid #1f761a;
+    color: #1f761a;
+    font-weight: 700;
+}
+
+
+@media (max-width: 1024px){
+    .profile__container{
+        flex-direction: column;
+    }
+
+    .profile_right-side{
+        border-left: 0;
+        border-top: 1px solid rgb(0, 0, 0, 0.2);
+    }
+}   
+
+@media (max-width: 768px){
+    .profile__container{
+        align-items: center;
+    }
+
+    .profile_left-side{
+        margin-right: 0;
+    }
+
+    .profile_left-side img{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 540px){
+    .navbar li{
+        display: none;
+    }
+}

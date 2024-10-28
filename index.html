@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dewakd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">Dewakd</div>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">My Inventory</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="profile__section">
+        <div class="container">
+            <div class="profile__container">
+                <div class="profile_left-side">
+                    <img id="profilePictureIMG" src="https://images.pexels.com/photos/27868437/pexels-photo-27868437/free-photo-of-portrait-of-young-man-in-white-shirt-with-mustache-and-curly-hair.jpeg?auto=compress&cs=tinysrgb&w=600" alt="#">
+                    <div class="profile-data">
+                        <div class="profile-name-role">
+                            <h2 id="profileName">Dewa Kadek Arie Yudha</h2>
+                            <p id="profileRole">Frontend Designer</p>
+                        </div>
+
+                        <div class="button_kontak-resume">
+                            <button onclick="editButton()" id="buttonEdit">Edit</button>
+                            <button>Resume</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile_right-side">
+                    <div class="title-data">
+                        <p>Availability</p>
+                        <p>Usia</p>
+                        <p>Lokasi</p>
+                        <p>Pengalaman</p>
+                        <p>Email</p>
+                    </div>
+                    <div class="title-value">
+                        <p id="profileAvail">Full Time</p>
+                        <p id="profileAge">17</p>
+                        <p id="profileLocation">Jakarta, Indonesia</p>
+                        <p id="profileExperience">2 Tahun</p>
+                        <p id="profileEmail">dewakd22@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form__section" id="formSection">
+        <div class="container">
+            <div class="form__container">
+                <form id="profileForm">
+                    <label for="profilePicture">Profile Picture</label>
+                    <input type="text" id="profilePicture" name="profilePicture"><br>
+
+                    <label for="fullName">Name</label>
+                    <input type="text" id="fullName" name="fullName"><br>
+
+                    <label for="role">Role</label>
+                    <input type="text" id="role" name="role"><br>
+
+                    <label for="availStatus">Availability</label>
+                    <input type="text" id="availStatus" name="availStatus"><br>
+
+                    <label for="age">Age</label>
+                    <input type="text" id="age" name="age"><br>
+
+                    <label for="lokasi">Lokasi</label>
+                    <input type="text" id="lokasi" name="lokasi"><br>
+
+                    <label for="yearsExp">Years Experience</label>
+                    <input type="text" id="yearsExp" name="yearsExp"><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"><br>
+
+                    <input class="submit" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
